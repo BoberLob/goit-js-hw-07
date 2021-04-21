@@ -1,0 +1,3 @@
+counterValue
+increment
+decrement
