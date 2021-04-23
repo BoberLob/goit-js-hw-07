@@ -75,3 +75,4 @@ typings/
 # FuseBox cache
 .fusebox/
 m4_t7-t10_call_apply_bind_arr_object.js
+m5_t7_method_prototype.js
