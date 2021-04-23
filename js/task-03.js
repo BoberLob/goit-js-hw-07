@@ -23,7 +23,7 @@ const images = [
 
 const ulEl = document.querySelector('#gallery');
 
-const galleryEl = images.map(image=> `<li><img class="img-cat" src = "${image.url}" alt = "${image.alt}" width=350></li>`).join('');
+const galleryEl = images.map(image=> `<li class="item"><img class="img-cat" src = "${image.url}" alt = "${image.alt}" width=350></li>`).join('');
 console.log(galleryEl);
 
 ulEl.insertAdjacentHTML('afterbegin', galleryEl);
