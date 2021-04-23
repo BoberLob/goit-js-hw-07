@@ -1,4 +1,4 @@
-**Читать на других языках:[English](README.en.md), [Русский](README.md), [Українська](README.ua.md).**
+**Читать на других языках: [English](README.en.md), [Русский](README.md), [Українська](README.ua.md).**
 
 # Критерии приема
 
