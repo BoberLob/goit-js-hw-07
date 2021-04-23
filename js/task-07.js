@@ -4,10 +4,14 @@
 const input = document.querySelector('#font-size-control');
 const span = document.querySelector('#text');
 
-input.addEventListener('input', onSpanInput);
+// input.addEventListener('input', onSpanInput);
 
-span.style.fontSize = `${input.value}px`;
+// span.style.fontSize = `${input.value}px`;
 
-function onSpanInput(event){
-    span.style.fontSize = `${event.currentTarget.value}px`; 
-}
+// function onSpanInput(event){
+//     span.style.fontSize = `${event.currentTarget.value}px`; 
+// }
+
+input.addEventListener('input', () => {
+    span.style.fontSize = 0.25 + (1.5 * input.value) / 100 + 'rem';
+});
