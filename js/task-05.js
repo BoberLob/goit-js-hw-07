@@ -6,7 +6,7 @@ const spanOutput = document.querySelector('#name-output');
 input.addEventListener('input', onInputDo);
 
 function onInputDo(element){
-    input.value === '' 
-    ? spanOutput.textContent = 'незнакомец' 
-    : spanOutput.textContent = element.currentTarget.value;
+    spanOutput.textContent = input.value === '' 
+    ? 'незнакомец' 
+    : element.currentTarget.value;
 };

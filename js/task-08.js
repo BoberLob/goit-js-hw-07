@@ -28,14 +28,17 @@ clearBtn.addEventListener("click", onClearInput);
 function onCreateBoxes() {
   let quantity = inputQuantity.value;
   //   console.log(quantity);
+  const boxStylesArray = [];
   for (let i = 0; i < quantity; i += 1) {
     const box = document.createElement("div");
     let boxSize = 30 + i * 10;
     box.style.width = `${boxSize}px`;
     box.style.height = `${boxSize}px`;
     box.style.backgroundColor = randomRGB();
-    boxes.appendChild(box);
+    boxStylesArray.push(box);
   }
+   console.log(boxStylesArray);
+  boxes.append(...boxStylesArray);
 }
 
 function randomRGB() {
