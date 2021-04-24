@@ -1,4 +1,4 @@
-**Read in other languages: [English](README.en.md), [Русский](README.md), [Українська](README.ua.md).**
+**Read in other languages: [English](README.en.md), [Ru](README.md), [Ua](README.ua.md).**
 
 # Admission criteria
 
