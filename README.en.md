@@ -1,25 +1,22 @@
-**Читать на других языках: [English](README.en.md), [Русский](README.md), [Українська](README.ua.md).**
+**Read in other languages: [English](README.en.md), [Русский](README.md), [Українська](README.ua.md).**
 
-# Критерії прийому
+# Admission criteria
 
-- Створено репозиторій `goit-js-hw-07`
-- При здачі домашньої роботи є два посилання: на вихідні файли і робочу сторінку
-  на GitHub pages
-- Завдання виконується строго по ТЗ
-- Кожне завдання виконано в окремому файлі з ім'ям `task-номер_завдання.js`.
-- При відвідуванні робочої сторінки (GitHub pages) завдання, в консолі немає
-  помилок і попереджень
-- Імена змінних та функцій зрозумілі, описові
-- Код відформатований за допомогою Prettier
+- Repository created `goit-js-hw-07`.
+- When submitting homework, there are two links to the source files and a working page on GitHub pages.
+- The task was completed srtictly according to the General requirements(GR).
+- Each task is completed in a separate file named `task-номер_завдання.js`.
+- When visiting the work page (GitHub pages) of the job, there are no errors or warnings in the console.
+- Variable and function names are clear, descriptive.
+- Code formatted with Prettier.
 
-## Стартові файли
+## Start files
 
-В папці [src](./src) ти знайдеш стартові файли проєкту з базовою розміткою і
-підключеними файлами скриптів для кожного завдання.
+In the folder [src](./src) you will find the project start files with basic markup and included script files for each task.
 
-## Завдання 1
+## Assigment 1
 
-В HTML є список категорій `ul#categories`.
+There is a list of categories in HTML `ul#categories`.
 
 ```html
 <ul id="categories">
@@ -56,29 +53,26 @@
 </ul>
 ```
 
-Напиши скрипт, який виконає наступні операції.
+Write a script that will perform the following operations.
 
-Порахує і виведе в консоль кількість категорій в `ul#categories`, тобто
-елементів `li.item`. Вийде `'У списку 3 категорії.'`.
+It will count and display the number of categories in the console `ul#categories`, that is elements `li.item`. It will work out `'У списку 3 категорії.'`.
 
-Для кожного елемента `li.item` в списку `ul#categories`, знайде і виведе в
-консоль текст заголовка елемента (тега h2) і кількість елементів в категорії
-(всіх вкладених в нього елементів `li`).
+For each item `li.item` in the list `ul#categories`, it will find and output to the console the text of the item title (tag h2) and the number of item in the category (all nested items li).
 
-Наприклад, для першої категорії вийде:
+For example, for the first category you get:
 
-- Категорія: Тварини
-- Кількість елементів: 4
+- Category: Animals
+- Number of elements: 4
 
-## Завдання 2
+## Assigment 2
 
-В HTML є пустий список `ul#ingredients`.
+There is an empty list in HTML `ul#ingredients`.
 
 ```html
 <ul id="ingredients"></ul>
 ```
 
-В JS є масив рядків.
+JS has an array of strings.
 
 ```js
 const ingredients = [
@@ -91,25 +85,25 @@ const ingredients = [
 ];
 ```
 
-Напиши скрипт, який для кожного елемента масиву `ingredients` створить окремий
-`li`, після чого вставить всі `li` за одну операцію в список `ul.ingredients`.
-Для створення DOM-вузлів використовуй `document.createElement()`.
+Write a script that  `ingredients` creates a separate one for each element of the array
+`li`, and then inserts everything `li` into the list in one operation `ul.ingredients`.
+To create DOM nodes use `document.createElement()`.
 
-## Завдання 3
+## Assigment 3
 
-Напиши скрипт для створення галереї зображень по масиву даних.
+Write a script to create a gallery of images from an array of data.
 
-В HTML є список `ul#gallery`.
+There is a list in HTML `ul#gallery`.
 
 ```html
 <ul id="gallery"></ul>
 ```
 
-Використовуй масив об'єктів `images` для створення тегів `img` вкладених в `li`.
-Для створення розмітки використовуй шаблонні рядки і `insertAdjacentHTML()`.
+Use an array of objects `images` to create tags `img` nested in `li`.
+Use template strings and to create `insertAdjacentHTML()`.
 
-- Всі елементи галереї повинні додаватися в DOM за одну операцію вставки.
-- Додай мінімальне оформлення галереї флексбоксами або грід через   css-класи.
+- All opera gallery elements should be added to the DOM in one insert operacion.
+- Add minimal design of the gallery with flexboxes or grids via css classes.
 
 ```js
 const images = [
@@ -131,16 +125,14 @@ const images = [
 ];
 ```
 
-## Завдання 4
+## Assigment 4
 
-Лічильник складається зі спана і кнопок, які повинні збільшувати і зменшувати
-значення лічильника на `1`.
+The counter consists of a span and buttons that must increase and decrease the counter value by `1`.
 
-- Створи змінну `counterValue` в якій буде зберігається поточне значення
-    лічильника.
-- Створи функції `increment` і `decrement` для збільшення і зменшення значення
-    лічильника.
-- Додай слухачі кліків на кнопки, виклики функцій та оновлення інтерфейсу
+- Create variable `counterValue` that will store the current value of the counter.
+
+- Create function `increment` and `decrement` for increasing and decreasing the counter value.
+- Add listeners for button clicks, function calls, and interface updates.
 
 ```html
 <div id="counter">
@@ -150,21 +142,19 @@ const images = [
 </div>
 ```
 
-## Завдання 5
+## Assigment 5
 
-Напиши скрипт який, при наборі тексту в інпут `input#name-input` (подія input),
-підставляє його поточне значення в `span#name-output`. якщо інпут порожній, в
-спані повинен відображатися рядок `'незнайомець'`.
+Write a script that, when typing in `input#name-input` (input event),
+value into `span#name-output`. If the input is empty, the line should be displayed in the span `'незнайомець'`.
 
 ```html
 <input type="text" placeholder="Ваше ім'я?" id="name-input" />
 <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
 ```
 
-## Завдання 6
+## Assigment 6
 
-Напиши скрипт, який би при втраті фокуса на інпут, перевіряв його вміст на
-правильну кількість символів.
+Write a script that, if you lose focus on an input, check its contents for the correct number of characters.
 
 ```html
 <input
@@ -175,11 +165,10 @@ const images = [
 />
 ```
 
-- Скільки символів має бути в інпут, вказується в його атрибуті `data-length`.
-- Якщо введена відповідна кількість, то `border` інпут стає зеленим,   якщо
-  неправильне - червоним.
+- How many characters should be in the input is indicated in its attribute `data-length`.
+- If a suitable amount is entered, then the `border` input turns green, if an incorrect one - red.
 
-Для додавання стилів, використовуй CSS-класи `valid` і `invalid`.
+To add styles, use CSS classes `valid` and `invalid`.
 
 ```css
 #validation-input {
@@ -195,11 +184,9 @@ const images = [
 }
 ```
 
-## Завдання 7
+## Assigment 7
 
-Напиши скрипт, який реагує на зміну значення `input#font-size-control` (подія
-input) і змінює інлайн-стиль `span#text` оновлюючи властивість `font-size`. В
-результаті при перетягуванні повзунка змінюватиметься розмір тексту.
+Write a script that reacts to a value change `input#font-size-control` (input event) and changes the inline style by `span#text` updating the property `font-size`. As a result, dagging the slider will change the size of the text.
 
 ```html
 <input id="font-size-control" type="range" />
@@ -207,25 +194,22 @@ input) і змінює інлайн-стиль `span#text` оновлюючи в
 <span id="text">Абракадабра!</span>
 ```
 
-## Завдання 8
+## Assigment 8
 
-Напиши скрипт створення і очищення колекції елементів. Користувач вводить
-кількість елементів в `input` і натискає кнопку `Створити`, після чого
-рендериться колекція. При натисканні на кнопку `Очистити`, колекція елементів
-очищається.
+Write a script to create and clean up a collection of items. The user enters the number of items into  `input` and clicks a button `Створити`, after which the collection is rendered. When the button is pressed `Очистити`, the collection of items is cleared.
 
-Створи функцію `createBoxes(amount)`, яка приймає 1 параметр `amount` - число.
-Функція створює стільки `div`, скільки вказано в `amount` і додає їх в
+Create a function `createBoxes(amount)`, that takes 1 parameter `amount` - a number.
+The function creates as  `div`, many as specified in `amount` and adds then to
 `div#boxes`.
 
-Кожен створений div:
+Each div created:
 
-- Має випадковий rgb колір фону
-- Розміри найпершого div - 30px на 30px
-- Кожен наступний div після першого, повинен бути ширше і вище попереднього на
+- Has a random rgb background color
+- The dimensions of the very first div - 30px by 30px
+- Each next div after the first must be 10px wider and higher than the previous one
     10px
 
-Створи функцію `destroyBoxes()`, яка очищає `div#boxes`.
+Create a function `destroyBoxes()` that cleans up `div#boxes`.
 
 ```html
 <div id="controls">
