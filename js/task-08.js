@@ -13,23 +13,10 @@
 на 10px
 Создай функцию destroyBoxes(), которая очищает div#boxes.*/
 
-const inputQuantity = document.querySelector("#controls").firstElementChild;
-// console.log(inputQuantity);
-const createBtn = document.querySelector('[data-action="render"]');
-// console.log(createBtn);
-const clearBtn = document.querySelector('[data-action = "destroy"]');
-// console.log(clearBtn);
-const boxes = document.querySelector("#boxes");
-// console.log(boxes);
-
-createBtn.addEventListener("click", onCreateBoxes);
-clearBtn.addEventListener("click", onClearInput);
-
-function onCreateBoxes() {
-  let quantity = inputQuantity.value;
-  //   console.log(quantity);
+function onCreateBoxes(amount) {
+  //console.log(amount);
   const boxStylesArray = [];
-  for (let i = 0; i < quantity; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const box = document.createElement("div");
     let boxSize = 30 + i * 10;
     box.style.width = `${boxSize}px`;
@@ -37,7 +24,7 @@ function onCreateBoxes() {
     box.style.backgroundColor = randomRGB();
     boxStylesArray.push(box);
   }
-   console.log(boxStylesArray);
+   //console.log(boxStylesArray);
   boxes.append(...boxStylesArray);
 }
 
@@ -52,3 +39,15 @@ function onClearInput() {
   inputQuantity.value = 0;
   boxes.innerHTML = "";
 }
+const inputQuantity = document.querySelector("#controls input");
+console.log(inputQuantity);
+const createBtn = document.querySelector('[data-action="render"]');
+// console.log(createBtn);
+const clearBtn = document.querySelector('[data-action = "destroy"]');
+// console.log(clearBtn);
+const boxes = document.querySelector("#boxes");
+// console.log(boxes);
+createBtn.addEventListener("click", () => {
+  onCreateBoxes(inputQuantity.value);
+});
+clearBtn.addEventListener("click", onClearInput);
