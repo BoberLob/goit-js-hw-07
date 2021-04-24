@@ -14,7 +14,7 @@
 Создай функцию destroyBoxes(), которая очищает div#boxes.*/
 
 function onCreateBoxes(amount) {
-  //console.log(amount);
+  console.log(amount);
   const boxStylesArray = [];
   for (let i = 0; i < amount; i += 1) {
     const box = document.createElement("div");
