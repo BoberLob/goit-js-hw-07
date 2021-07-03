@@ -10,7 +10,7 @@ const fn = arr => arr.map(el => {
   
   //console.log(fn(['html', 'css', 'js', 'react']));
 
-console.log('#####:', fn(['html', 'css', 'js', 'react']));
+console.dir(fn(['html', 'css', 'js', 'react']));
                 
 // Что будет выведено в консоль?
 console.log('#####:Что будет выведено в консоль?');
