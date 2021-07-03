@@ -1,5 +1,5 @@
 // Что будет выведено в консоль?
-//console.log('#####:smthg');
+console.log('#####:Что будет выведено в консоль?');
                 
 const fn = arr => arr.map(el => {
     const item = document.createElement('div');
@@ -10,9 +10,10 @@ const fn = arr => arr.map(el => {
   
   //console.log(fn(['html', 'css', 'js', 'react']));
 
-console.log('##### fn([/'html/', /'css/', /'js/', /'react/'])', fn(['html', 'css', 'js', 'react']));
+console.log('#####:', fn(['html', 'css', 'js', 'react']));
                 
 // Что будет выведено в консоль?
+console.log('#####:Что будет выведено в консоль?');
   const person = {
     age: 10,
     setAge(newAge) {
