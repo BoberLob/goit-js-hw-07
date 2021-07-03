@@ -10,7 +10,7 @@ const fn = arr => arr.map(el => {
   
   //console.log(fn(['html', 'css', 'js', 'react']));
 
-console.log('#####fn(['html', 'css', 'js', 'react'])', fn(['html', 'css', 'js', 'react']))
+console.log('##### fn([/'html/', /'css/', /'js/', /'react/'])', fn(['html', 'css', 'js', 'react']));
                 
 // Что будет выведено в консоль?
   const person = {
@@ -30,5 +30,5 @@ console.log('#####fn(['html', 'css', 'js', 'react'])', fn(['html', 'css', 'js', 
   }
   
   person.refreshAge();
-  console.log(person.age);
-//console.log('#####:person.age', person.age);
+  //console.log(person.age);
+console.log('#####:person.age', person.age);
