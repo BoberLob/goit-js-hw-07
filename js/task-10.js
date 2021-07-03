@@ -1,5 +1,5 @@
 // Что будет выведено в консоль?
-console.log('#####:smthg', smthg);
+console.log('#####:smthg');
                 
 const fn = arr => arr.map(el => {
     const item = document.createElement('div');
